@@ -111,7 +111,11 @@ export default function Quiz({ questions, questionsInfo, setQuestionsInfo }) {
                 style += ` ${styles.questionsBoxAnswers__none}`;
                 element = false;
               }
-              return <div className={style}>{element}</div>;
+              return (
+                <div key={`icon-of-answer-${numberOfAnswer}`} className={style}>
+                  {element}
+                </div>
+              );
             })}
           </div>
         </div>
