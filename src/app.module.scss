@@ -1,0 +1,9 @@
+body {
+  background-color: #42958a;
+  .wrapper {
+    display: flex;
+    justify-content: center; /* центрирует по горизонтали */
+    align-items: center; /* центрирует по вертикали */
+    height: 100vh;
+  }
+}

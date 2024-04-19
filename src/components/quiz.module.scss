@@ -1,0 +1,126 @@
+.button {
+  transition-duration: 0.3s;
+  &:hover {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.01);
+  }
+}
+.item {
+  font-size: 20px;
+  color: black;
+}
+.questionsBox {
+  margin: auto;
+  padding: 28px 23px;
+  height: 100%;
+  background-color: white;
+  max-width: 500px;
+  width: 100%;
+  max-height: 420px;
+  overflow: auto;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  &End {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__line {
+    margin-top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: #d9dcdc;
+  }
+  &__endTitle {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__endGreenText {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+  }
+  &__endRedText {
+    margin-top: -20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+  &__numberOfQuestions {
+    padding: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #42958a;
+  }
+  &__title {
+    padding: 0 5px;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  &__button {
+    margin-top: 14px;
+    width: 40px;
+    padding: 9px 23px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: #429488;
+  }
+  &ButtonBlock {
+    padding: 5px;
+    margin-top: 13px;
+    margin-right: 23px;
+    &__button {
+      border-radius: 5px;
+      margin-top: 8px;
+      width: 100%;
+      background-color: #d9dcdc;
+      padding: 15px 11px;
+      &NotCorrect {
+        color: white;
+        background-color: red;
+      }
+      &Correct {
+        color: white;
+        background-color: #377e22;
+        &ButNotChoose {
+          border: 2px dashed #377e22;
+        }
+      }
+    }
+  }
+
+  &Answers {
+    padding: 0 5px;
+    margin-top: 7px;
+    display: flex;
+    &__answer {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 33px;
+      height: 31px;
+      border-radius: 50%;
+      border: 2px solid #000;
+      margin-right: 5px;
+    }
+    &__notCorrect {
+      background-color: red;
+    }
+    &__correct {
+      background-color: #377e22;
+    }
+    &__none {
+      background-color: #d9dcdc;
+    }
+  }
+}
